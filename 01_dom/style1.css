@@ -1,0 +1,22 @@
+.button{
+        border: 1px solid black;
+        padding:10px 30px;
+        gap:3px;
+        margin: 2px ;
+        
+        
+        
+}
+
+#grey{
+    background-color: grey;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+#pink{
+    background-color: pink;
+}

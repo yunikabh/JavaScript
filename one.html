@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="main">
+    <!-- <div class="title">
+      home
+    </div> -->
+  </body>
+  <script>
+    const div=document.createElement('div')
+    console.log(div);
+    div.className="mainn"
+    div.setAttribute("title","generated title");
+    div.style.backgroundColor="green"
+    // div.innerText="created new elements using dom in memory not in window"
+     
+    const addText=document.createTextNode("created a element in window")
+        div.appendChild(addText)
+
+        document.body.appendChild(div)
+    
+    </script>
+</html>

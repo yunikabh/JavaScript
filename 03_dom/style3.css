@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+.clock{
+    width:75px;
+    height:20px;
+    background-color: yellow;
+    border-radius: 2px;
+}

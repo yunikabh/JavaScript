@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <!-- Add the element in the list  -->
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langname) {
+      const li = document.createElement("li");
+      li.innerText = `${langname}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("python ");
+    addLanguage("textscript");
+
+    function addOptiLanguage(langname) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langname));
+      document.querySelector(".language").appendChild(li);
+    }
+
+    addOptiLanguage("social ");
+    addOptiLanguage("science ");
+
+    //EDIT
+    //  const allli= document.querySelectorAll('li');  // const firstli=document.querySelector("li:nthChild(2)")
+    //  console.log(allli)
+    //  const firstli = allli[1];
+    //  console.log(firstli)
+
+    const secondli = document.querySelector("li:nth-Child(2)");
+    console.log(secondli);
+    //secondli.innerHTML=("PHP"); //using inner html is a cheap process so we create a new elemet and replace with it .
+    const replaceli = document.createElement("li");
+    replaceli.textContent = "PHP";
+   secondli.replaceWith(replaceli);
+
+    //edit
+    const thirdli = document.querySelector("li:nth-Child(3)");
+    console.log(thirdli);
+    thirdli.outerHTML='<li>ChatGpt</li>'
+
+    //REMOVE
+    const lastli = document.querySelector("li:last-child");
+    // console.log(lastli)
+    lastli.remove();
+
+
+  </script>
+</html>

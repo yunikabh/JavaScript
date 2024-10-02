@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    //  const changetext = function(){
+    //     document.querySelector('h1').innerHTML="best javascript "
+    //  }
+    //   const changeMe =   setTimeout(changetext
+    //     ,2000)
+    //     document.querySelector('#stop').addEventListener('click',function(){
+    //         clearTimeout(changeMe);
+    //         console.log("stoppeed"); 
+    //     })
+
+        let intervalid;
+
+        document.querySelector('#start').addEventListener('click',function(e){
+            const sayDate  = function(){
+            console.log("Yunika",Date.now());
+
+        } 
+        intervalid =setInterval(sayDate,2000,"hii");
+        
+        // document.querySelector('#stop').intervalid=intervalid;
+        
+    },false)
+      
+
+        document.querySelector('#stop').addEventListener('click',function(e){
+           
+            clearInterval(intervalid);
+
+        },false)
+
+
+        
+</script>
+</html>

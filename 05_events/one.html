@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: white;">
+    <h2>Amazing image </h2>
+    <ul id="images">
+        <li><img width="200px" id="flower" src="https://images.pexels.com/photos/28589337/pexels-photo-28589337/free-photo-of-vibrant-red-poppy-flower-in-bloom-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="flower"></li>
+        <li><img width ="200px" id="telephone" src="https://images.pexels.com/photos/28573322/pexels-photo-28573322/free-photo-of-iconic-red-telephone-box-in-urban-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="telephone"></li>
+        <li><img width ="200px" id= "tower"src="https://images.pexels.com/photos/27938937/pexels-photo-27938937/free-photo-of-berlin-tv-tower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+        <li><a href="https://www.google.com/" id="google">Google</a></li>
+    
+    </ul>
+</body>
+<script>
+        //need to read
+        // type,timestamp,default prevented
+        //target,toElement ,srcElement,currentTarget
+        //clientX ,clientY,svreenX ,screenY
+        //altkey ,ctrlkey ,shiftkey ,keyCode
+
+
+
+        // document.getElementById('id').onclick = function(){
+        //     alert("tower is clicked againn");
+        // }
+        // document.getElementById('images').addEventListener('click',function(e){
+        //      alert("ul is clicked");
+        // },false)
+        // document.getElementById('tower').addEventListener('click',function(e){
+        //      alert("tower is clicked againnn");
+        //         e.stopPropagation();
+        // },false)
+        // document.getElementById('tower').addEventListener('click',function(e){
+        //      alert("tower is clicked againnn");
+        //         e.stopPropagation();
+        // },true) //capturing propagation 
+
+        // document.getElementById('google').addEventListener('click',function(e){
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        //     alert("google is clicked");
+
+        // },false)
+
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.tagName);
+            if(e.target.tagName === 'IMG'){
+            const removeit = e.target.parentNode
+            removeit.remove(); 
+            }
+        })
+
+
+         
+</script>
+</html>
